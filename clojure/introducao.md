@@ -9,10 +9,10 @@ Tudo em clojure é uma função. Isso inclui números, strings, listas, conjunto
 Aqui esta um exemplo de uma função que soma dois números em Python:
 
 
-    ```python
-    def soma(a, b):
-        return a + b
-    ```
+```python
+def soma(a, b):
+    return a + b
+```
 
 Aqui esta um exemplo de uma função que soma dois números em Clojure:
     
