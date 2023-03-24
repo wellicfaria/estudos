@@ -25,25 +25,25 @@ Como tudo é uma função, podemos passar funções como argumentos para outras 
 
 Se então Python temos a soma de 2 +2 assim:
 
-    ```python
-    2 + 2
-    ```
+```python
+2 + 2
+```
 Em Clojure, temos a soma de 2 + 2 assim:
 Onde o + é uma função que recebe dois argumentos e retorna a soma deles.
 
-    ```clojure
-    (+ 2 2)
-    ```
+```clojure
+(+ 2 2)
+```
 Um exemplo de 2 + 2 + 5
     
-    ```clojure
-    (+ 2 2 5)
-    ```
+```clojure
+(+ 2 2 5)
+```
 
-    ou
+ou
 
-    ```clojure
-    (+ (+ 2 2) 5)
-    ```
+```clojure
+(+ (+ 2 2) 5)
+```
 
 
