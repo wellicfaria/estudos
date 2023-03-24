@@ -168,6 +168,18 @@ Em Clojure, temos um mapa assim:
 ```
 Maps sao muito usado em Clojure. 
 
+Como pegar o valor de um elemento de um mapa? Em Python, fazemos assim:
+
+```python
+dicionario['nome']
+```
+
+Em Clojure, fazemos assim:
+
+```clojure
+(:nome dicionario)
+```
+
 ## Quarto Conceito - Listas
 
 Em Python, temos uma lista assim:
@@ -180,18 +192,6 @@ Em Clojure, temos uma lista assim:
 
 ```clojure
 (def lista [1 2 3 4 5])
-```
-
-Como pegar o valor de um elemento de um mapa? Em Python, fazemos assim:
-
-```python
-dicionario['nome']
-```
-
-Em Clojure, fazemos assim:
-
-```clojure
-(:nome dicionario)
 ```
 
 Como fazemos para acessar um elemento da lista? Em Python, fazemos assim:
@@ -331,3 +331,38 @@ Em Clojure, temos uma função de alta ordem assim:
 (print (calculadora 10 5 soma))
 (print (calculadora 10 5 subtracao))
 ```
+
+## Oitavo Conceito - Thread first and Thread last
+
+Em Python de Thread first, temos um código assim:
+
+```python
+def soma(x, y):
+    return x + y
+
+def subtracao(x, y):
+    return x - y
+
+def calculadora(x, y, funcao): 
+    return funcao(x, y)
+
+print(calculadora(10, 5, soma))
+print(calculadora(10, 5, subtracao))
+``` 
+
+Em Clojure, temos um código assim:
+
+```clojure
+(defn soma [x y]
+    (+ x y))
+
+(defn subtracao [x y]
+    (- x y))
+
+(defn calculadora [x y funcao]
+    (funcao x y))
+
+(print (calculadora 10 5 soma))
+(print (calculadora 10 5 subtracao))
+```
+
