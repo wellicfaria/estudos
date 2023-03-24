@@ -16,10 +16,10 @@ Aqui esta um exemplo de uma função que soma dois números em Python:
 
 Aqui esta um exemplo de uma função que soma dois números em Clojure:
     
-    ```clojure
-    (defn soma [a b]
+```clojure
+(defn soma [a b]
         (+ a b))
-    ```
+```
 
 Como tudo é uma função, podemos passar funções como argumentos para outras funções. Isso é chamado de *Higher Order Function*.
 
